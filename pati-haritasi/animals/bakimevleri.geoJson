@@ -1,0 +1,397 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 1,
+                "name": "Avcılar Belediyesi Veteriner İşleri Müdürlüğü Sokak Hayvanları Kısırlaştırma ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.7470386,
+                    40.9825164
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Bahçelievler Hayvan Kısırlaştırma ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.8216788,
+                    40.9990862
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Bağcılar Belediyesi Kısırlaştırma ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.8120704,
+                    41.0635257
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Bakırköy Belediyesi Sokak Hayvanları Geçici Bakımevi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.8356782,
+                    40.9850609
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Bayrampaşa Belediyesi Hayvan Barınağı"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.878508,
+                    41.0689791
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Beşiktaş Belediyesi Veteriner İşleri Müdürlüğü Kısırlaştırma Ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.0156174,
+                    41.0557126
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Beylikdüzü Belediyesi Kısırlaştırma ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.6355139,
+                    40.9911147
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Beyoğlu Belediyesi Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.9428966,
+                    41.0523246
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Büyükçekmece Sahipsiz Hayvanlar Bakım, Tedavi ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.6196777,
+                    41.0404889
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Beylikdüzü Belediyesi Kısırlaştırma ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.6355139,
+                    40.9911147
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Esenler Belediyesi Hayvan Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.8968316,
+                    41.0272484
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Esenyurt Belediyesi Yakuplu Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.6728632,
+                    41.008594
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Gaziosmanpaşa Belediyesi Küçükköy Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.8893977,
+                    41.0895688
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Güngören Belediyesi Veteriner İşleri Müdürlüğü"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.8847291,
+                    41.0218602
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "İstanbul Büyükşehir Belediyesi Hasdal Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.9227931,
+                    41.141377
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "İBB Kısırkaya Sahipsiz Hayvan Geçici Bakımevi ve Bahçeli Yaşam Alanı"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.9417809,
+                    41.2576218
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Küçükçekmece Belediyesi Sokak Hayvanları Tedavi ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.767537,
+                    41.0451158
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Sarıyer Belediyesi Kısırkaya Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.9461348,
+                    41.257089
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Silivri Belediyesi Küçük Hayvan Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.2944968,
+                    41.0949676
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Şişli Belediyesi Veteriner İşleri Müdürlüğü Kısırlaştırma ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.9659559,
+                    41.0507292
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Fatih Belediyesi Yedikule Hayvan Barınağı"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.9184635,
+                    40.9904623
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Zeytinburnu Belediyesi Sahipsiz Hayvan Geçici Bakımevi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.9190748,
+                    41.0056729
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Kadıköy Belediyesi Geçici Hayvan Bakım Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.1255854,
+                    40.9977762
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Üsküdar Belediyesi Sokak Hayvanları Barındırma ve Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.1060327,
+                    41.0552198
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Ümraniye Belediyesi Hekimbaşı Sahipsiz Hayvan Bakımevi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.1042085,
+                    41.0544907
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Beykoz Belediyesi Hayvan Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.202584,
+                    41.1375953
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Tuzla Hayvan Rehabilitasyon Merkezi"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.3467919,
+                    40.8607943
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 2,
+                "name": "Şile Belediyesi Veterinerlik Müdürlüğü"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.585386,
+                    41.1605028
+                ]
+            }
+        }
+    ]
+}

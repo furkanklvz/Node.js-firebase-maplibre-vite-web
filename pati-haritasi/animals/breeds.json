@@ -1,0 +1,42 @@
+{
+  "dog": [
+    "Labrador Retriever",
+    "Alman Kurdu",
+    "Golden Retriever",
+    "Bulldog",
+    "Beagle",
+    "Poodle",
+    "Rottweiler",
+    "Yorkshire Terrier",
+    "Boxer",
+    "Dachshund",
+    "Sibirya Kurdu (Husky)",
+    "Danua",
+    "Doberman Pinscher",
+    "Avustralya Çoban Köpeği",
+    "Cocker Spaniel",
+    "Shih Tzu",
+    "Boston Terrier",
+    "Pomeranian",
+    "Chihuahua",
+    "Maltese",
+    "Kangal",
+    "Sokak Köpeği",
+    "Diğer"
+  ],
+  "cat": [
+    "Van Kedisi",
+    "British Shorthair",
+    "Siyam Kedisi",
+    "Maine Coon",
+    "İran Kedisi",
+    "Ragdoll",
+    "Bengal Kedisi",
+    "Scottish Fold",
+    "Sfenks Kedisi",
+    "Birman Kedisi",
+    "Abyssinian Kedisi (Habeş Kedisi)",
+    "Sokak Kedisi",
+    "Diğer"
+  ]
+}

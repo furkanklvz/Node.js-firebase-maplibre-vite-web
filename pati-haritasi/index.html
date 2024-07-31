@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pati Haritası</title>
+</head>
+
+<body>
+  <div id="div_chat_container">
+    <span id="chat_container_close" onclick="closeDiv('div_chat_container')">&times;</span>
+    <div id="div_chat_relevant_notice">
+      <p id="p_chat_relevant_notice_title">ilan adı</p>
+      <button id="btn_chat_ilana_git" type="button">İlana Git</button>
+    </div>
+    <div id="div_chatting_user">
+      <h3 id="h3_chatting_user"></h3>
+    </div>
+    <div id="div_messages">
+      <ul id="message_list">
+      </ul>
+    </div>
+    <div id="div_input">
+      <input id="input_message" type="text" placeholder="Mesaj yazın..">
+      <button id="send_button" type="button">Gönder</button>
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="model_close" class="close">&times;</span>
+      <p>İlan başarıyla oluşturuldu.</p>
+    </div>
+  </div>
+  <div id="div_sign">
+    <div id="div_logo_container">
+      <img id="img_logo" src="images/logo_no_background.svg" alt="logo">
+    </div>
+    <div id="signIn" style="display: none;">
+      <form>
+        <label style="color: black; font-size: large">Zaten bir hesabın var mı?</label>
+        <BR>
+        <input class="sign_input1" id="signIn_email" type="email" placeholder="E- Mail:" required>
+        <br>
+        <input class="sign_input1" id="signIn_password" type="password" placeholder="Şifre:" required>
+        <p id="p_forget_password">Şifremi Unuttum</p>
+        <button id="btn_signIn" type="button" style="margin-top: 20px;">Giriş Yap</button>
+      </form>
+
+    </div>
+    <div id="signUp" style="display: none;">
+      <form id="register_form">
+        <LAbel style="color: black; font-size: large;">KAYIT OL</LAbel>
+        <BR>
+        <input class="sign_input1" id="register_first" type="text" placeholder="Ad:" required>
+        <br>
+        <input class="sign_input1" id="register_last" type="text" placeholder="Soyad:" required>
+        <br>
+        <input class="sign_input1" id="register_email" type="email" placeholder="E- Mail:" required>
+        <br>
+        <input class="sign_input1" id="register_tel" type="tel" placeholder="Telefon Numarası (5__):" required>
+        <br>
+        <input class="sign_input1" id="register_password" type="password" placeholder="Şifre:" required>
+        <br>
+        <button id="btn_register" type="button">Kayıt Ol</button>
+      </form>
+
+    </div>
+  </div>  
+  <div id="app">
+    
+    <div id="overlay"></div>
+    <div id="div_search_container" class="div_search">
+      <button type="button" class="cancel_search" id="btn_cancel_search"></button>
+      <input id="searched_word" class="search_input" type="text" placeholder="Ara">
+      <button id="search_button" class="search_button" type="button"></button>
+      <button id="filter_button" class="btn_filter"></button>
+    </div>
+
+    <div id="div_ilan_olustur" style="display: none;" class="div_left_1">
+      <h2 style="color:black; font-size:'large'" id="p_create_notice_title">KAYIP HAYVAN İLANI OLUŞTUR</h2>
+      <button id="btn_ilan_olustur" style="display: block;">Seçilen Konumda İlan Oluştur</button>
+      <form id="ilan_olusturma_formu" style="display: none; text-align: left;">
+
+        <br>
+        <label style="color: black;">Mahalle:</label>
+        <br>
+        <select name="neighborhood" id="neighborhood_select">
+        </select>
+        <br>
+        <label style="color: black;">Hayvan Türü:</label>
+        <br>
+        <select name="animal" id="select_animal">
+        </select>
+        <br>
+        <label style="color: black;">Irk:</label>
+        <br>
+        <select name="breed" id="select_breed">
+        </select>
+        <br>
+        <label style="color: black;">İlan Başlığı:</label>
+        <br>
+        <input class="input_notice_infos" id="ilan_baslik" style="width: 272px;" type="text">
+        <br>
+        <label style="color: black;">Açıklama:</label>
+        <br>
+        <textarea id="ilan_aciklama" maxlength="200" rows="5" cols="33"></textarea>
+        <br>
+        <label style="color: black;">Görsel:</label>
+        <br>
+        <input class="input_notice_infos" style="width: 272px;" type="file" id="input_image" accept="image/*">
+        <br>
+        <div style="margin: 5px;" class="image-preview" id="image-preview">
+          <span>Görsel Önizlemesi</span>
+        </div>
+        <br>
+        <button type="button" id="btn_ilan_onayla">Yayınla</button>
+        <br>
+      </form>
+    </div>
+
+    <!-- 000000000 -->
+
+    <div id="div_sahiplendir" style="display: none;" class="div_left_1">
+      <button id="btn_shp_form_ac" style="display: block;">Seçilen Konumda İlan Oluştur</button>
+      <form id="shp_ilan_olusturma_formu" style="display: none; text-align: left;">
+
+        <br>
+        <label style="color: black;">Mahalle:</label>
+        <br>
+        <select name="neighborhood" id="shp_neighborhood_select">
+        </select>
+        <br>
+        <label style="color: black;">Hayvan Türü:</label>
+        <br>
+        <select name="animal" id="shp_select_animal">
+        </select>
+        <br>
+        <label style="color: black;">Irk:</label>
+        <br>
+        <select name="breed" id="shp_select_breed">
+        </select>
+        <br>
+        <label style="color: black;">İlan Başlığı:</label>
+        <br>
+        <input class="input_notice_infos" id="shp_ilan_baslik" style="width: 272px;" type="text">
+        <br>
+        <label style="color: black;">Yaş:</label>
+        <br>
+        <input class="input_notice_infos" id="shp_yas" style="width: 272px;" type="number">
+        <br>
+        <label style="color: black;">Cinsiyet:</label>
+        <div class="div_genders_radio_container">
+          <div class="div_radio1">
+            <input class="input_notice_gender" id="shp_cinsiyet_erkek" name="gender" type="radio" value="Erkek" checked>
+            <label for="shp_cinsiyet_erkek" style="color: black;">Erkek</label>
+          </div>
+          <div class="div_radio1">
+            <input class="input_notice_gender" id="shp_cinsiyet_disi" name="gender" type="radio" value="Dişi">
+            <label for="shp_cinsiyet_disi" style="color: black;">Dişi</label>
+          </div>
+        </div>
+        <label style="color: black;">Açıklama:</label>
+        <br>
+        <textarea id="shp_ilan_aciklama" maxlength="200" rows="5" cols="33"></textarea>
+        <br>
+        <label style="color: black;">Görsel:</label>
+        <br>
+        <input class="input_notice_infos" style="width: 272px;" type="file" id="shp_input_image" accept="image/*">
+        <br>
+        <div style="margin: 5px;" class="image-preview" id="shp_image-preview">
+          <span>Görsel Önizlemesi</span>
+        </div>
+        <br>
+        <button type="button" id="shp_btn_yayınla">Yayınla</button>
+        <br>
+      </form>
+    </div>
+    <div style="display: none;" id="div_ilan_olusturma_yonergesi" class="div_title_background">
+      <p style="margin-top: 15px;padding: 0;" id="p_ilan_olusturma_yonergesi">İşaretçiyi sürükleyerek bir konum seçin.
+      </p>
+    </div>
+    
+
+    <button type="button" class="image_button" id="btn_user" style="display: none;"></button>
+
+    <div id="div_user_settings" style="display: none" class="div_right_1">
+
+      <button type="button" class="btn_close" onclick="closeDiv('div_user_settings')">X</button>
+      <h3 id="p_adSoyad" style="color: black; margin-top: 45px;">Ad Soyad:</h3>
+      <button class="btn_profile1" id="btn_my_profile_infos" type="button">Profil Bilgileri</button>
+      <br>
+      <br>
+      <button class="btn_profile1" id="btn_my_notices" type="button">Kayıp İlanlarım</button>
+      <br>
+      <br>
+      <button class="btn_profile1" id="btn_my_adoption_notices" type="button">Sahiplendirme İlanlarım</button>
+      <br>
+      <br>
+      <button class="btn_profile1" id="btn_my_chats" type="button" onclick="viewChats()">Sohbetlerim</button>
+      <br>
+      <br>
+      <button class="btn_profile1" id="btn_signOut" type="button">Çıkış Yap</button>
+    </div>
+    <div id="div_my_notices" style="display: none;" class="div_right_1">
+      <button class="btn_turn_back" type="button" onclick="turnBack('div_my_notices')"></button>
+      <script>
+        function turnBack(div) {
+          document.getElementById('div_user_settings').style.display = 'block';
+          document.getElementById(div).style.display = 'none';
+        }
+      </script>
+      <br><br><br>
+      <h3 class="h3_profile_list_title">İLANLARIM</h3><hr>
+      <div class="scrollable_notices_and_messages_container">
+        <ul style="list-style-type: none; padding: 4px;" id="ul_my_notices"></ul>
+      </div>
+    </div>
+    <div id="div_my_chats" style="display: none;" class="div_right_1">
+      <button class="btn_turn_back" type="button" onclick="turnBack('div_my_chats')"></button>
+      <script>
+        function turnBack(div) {
+          document.getElementById('div_user_settings').style.display = 'block';
+          document.getElementById(div).style.display = 'none';
+        }
+      </script>
+      <br><br><br>
+      <h3 class="h3_profile_list_title">SOHBETLERİM</h3><hr>
+      <div class="scrollable_notices_and_messages_container">
+        <ul style="list-style-type: none; padding: 4px;" id="ul_my_chats"></ul>
+      </div>
+      
+    </div>
+    <div id="div_profile_infos" class="div_right_1" style="display: none;">
+      <button class="btn_turn_back" type="button" onclick="turnBack('div_profile_infos')"></button>
+      <script>
+        function turnBack(div) {
+          document.getElementById('div_user_settings').style.display = 'block';
+          document.getElementById(div).style.display = 'none';
+        }
+      </script>
+      <br><br>
+      <h3 style="color: #000; ">Ad Soyad:</h3>
+      <p id="p_info_name_surname" class="p_profile_infos"></p>
+      <h3 style="color: #000;">E-Posta:</h3>
+      <p id="p_info_email" class="p_profile_infos"></p>
+      <h3 style="color: #000;">Telefon Numarası:</h3>
+      <p id="p_info_tel" class="p_profile_infos"></p>
+      <button id="btn_info_reset_password" type="button">Şifreni Sıfırla</button>
+    </div>
+
+    
+
+  </div>
+  <script type="module" src="src/auth.js"></script>
+  <script type="module" src="src/map.js"></script>
+
+  
+  </div>
+
+  <div id="div_img_popup_container" class="img_popup_container">
+    <span class="close" onclick="closeDiv('div_img_popup_container')">&times;</span>
+    <img class="popup-content" alt="resim" id="popup_img">
+  </div>
+  <div id="div_reset_password" class="div_reset_password">
+    <span class="close" onclick="closeDiv('div_reset_password')">&times;</span>
+    <div style="background-color: rgba(0, 0, 0, 0.3); padding: 10px; width: fit-content;height: fit-content;">
+      <label style="position: relative;">Şifre Sıfırla</label><br><br>
+      <input style="position: relative; padding: 7px; border-radius: 5px;" type="email" id="email"
+        placeholder="E-Posta"><br><br>
+      <button style="position: relative;" id="btn_send_reset_mail">Sıfırlama Bağlantısı Gönder</button>
+    </div>
+
+  </div>
+  <div id="div_fiter_container">
+    <div class="div_filter_toggle_switch" style="margin-bottom: 5px;">
+      <label for="cb_filter_vet" class="filter_label_1">Veterinerler:</label>
+      <label class="switch">
+        <input id="cb_filter_vet" type="checkbox" >
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="div_filter_toggle_switch" style="margin-bottom: 5px;">
+      <label for="cb_filter_shelter" class="filter_label_1">Hayvan Bakımevleri:</label>
+      <label class="switch">
+        <input id="cb_filter_shelter" type="checkbox" >
+        <span class="slider"></span>
+      </label>
+    </div>
+    <hr style="border-color: #000; width: 300px;">
+    <div class="div_filter_toggle_switch" style="margin-bottom: 5px;">
+      <label for="cb_filter_missing" class="filter_label_1">Kayıp Hayvanlar:</label>
+      <label class="switch">
+        <input id="cb_filter_missing" type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="div_filter_toggle_switch" style="margin-bottom: 5px;">
+      <label for="cb_filter_adoption" class="filter_label_1">Sahiplenilebilir Hayvanlar:</label>
+      <label class="switch">
+        <input id="cb_filter_adoption" type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+    <hr style="border-color: #000; width: 300px;">
+    <div id="div_filter_animal">
+      <div id="filter_dog">
+        <div class="div_filter_toggle_switch" style="margin-bottom: 5px;">
+          <label for="cb_filter_dog" class="filter_label_1">Köpekler:</label>
+          <label class="switch">
+            <input id="cb_filter_dog" type="checkbox" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div id="div_filter_dog_breeds" style="margin-left: 10px;">
+          <label class="filter_label_1">Irk Seçin:</label>
+          <div id="div_dog_scrollable_checkbox_container" class="scrollable_checkbox_container">
+          </div>
+        </div>
+      </div>
+      <div id="filter_cat" style="margin-top: 7px;">
+        <div class="div_filter_toggle_switch">
+          <label for="cb_filter_cat" class="filter_label_1">Kediler:</label>
+          <label class="switch">
+            <input id="cb_filter_cat" type="checkbox" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div id="div_filter_cat_breeds" style="margin-left: 10px;">
+          <label class="filter_label_1">Irk Seçin:</label>
+          <div id="div_cat_scrollable_checkbox_container" class="scrollable_checkbox_container">
+          </div>
+      </div>
+    </div>
+    
+    
+    </div>
+    <hr style="border-color: #000; width: 300px;">
+    <div class="div_filter_select_container">
+      <label class="filter_label_1" for="select_filter_district">İlçe: </label>
+      <select class="filter_select1" name="filter_district" id="select_filter_district"></select>
+    </div>
+    <div style="display: none;" class="div_filter_select_container" id="div_select_filter_neighborhood">
+      <label class="filter_label_1" for="select_filter_neighborhood">Mahalle: </label>
+      <select class="filter_select1" name="filter_district" id="select_filter_neighborhood"></select>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <label class="filter_label_1" for="select_filter_gender">Cinsiyet: </label>
+      <select class="filter_select1" name="filter_district" id="select_filter_gender" style="margin-left: auto;">
+        <option value="Tümü">Tümü</option>
+        <option value="Erkek">Erkek</option>
+        <option value="Dişi">Dişi</option>
+      </select>
+    </div>
+    <button id="btn_filtre_onayla" type="button">Filtrele</button>
+  
+
+  </div>
+  <div id="div_create_notice_container">
+    <button id="btn_kayip_ilani_ver" type="button" style="display: none;">Kayıp Hayvan İlanı Ver</button>
+    <button id="btn_sahiplendir" type="button" style="display: none;">Hayvan Sahiplendir</button>
+  </div>
+</body>
+
+
+</html>
